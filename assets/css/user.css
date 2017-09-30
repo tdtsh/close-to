@@ -16,8 +16,7 @@
 @media (min-width:992px) {
   .hero .get-it{
     text-align:right;
-    margin-top:80px;
-    padding-right:20px;
+    margin-top:60px;
   }
 }
 
@@ -161,3 +160,20 @@ div.media-object{
   width:80px;
 }
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+.row_contact {
+  padding: 40px 0 80px 0;
+}
+
+.container_about {
+  padding: 40px 0 80px 0;
+}
+
+.h2about {
+  padding-bottom: 20px;
+}

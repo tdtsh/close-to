@@ -24,9 +24,9 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"><a href="#about">Business </a></li>
-                    <li role="presentation"><a href="#">Contact </a></li>
-                    <li role="presentation"><a href="#about">About us</a></li>
+                    <li class="active" role="presentation"><a href="#business" data-scroll>Business</a></li>
+                    <!--li role="presentation"><a href="#contact" data-scroll>Contact</a></li-->
+                    <li role="presentation"><a href="#about" data-scroll>About us</a></li>
                 </ul>
             </div>
         </div>
@@ -36,22 +36,23 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 get-it">
                     <h1> Get closer to your goal.</h1>
-                    <p>クロストゥは古都京都を拠点に iPhone/Androidアプリをメインにシステム受託開発をおこなっています。Titanium Mobile、Node.js、AWS等を活用し、コストパフォーマンスの高いアプリ開発を実現します。 </p>
+                    <p>コストパフォーマンスの高いモバイル・アプリケーション（iPhone/Android) とBackendサービス開発、クラウド・インフラ構築を、ワンストップで。</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="clearfix"></div>
-                    <p class="text-right"><a class="btn btn-success btn-lg" role="button" href="#" target="_blank">お問い合わせ </a></p>
+                    <p class="text-right"><a class="btn btn-success btn-lg" role="button" href="#contact" data-scroll>お問い合わせ</a></p>
                 </div>
             </div>
         </div>
     </div>
+
     <section class="testimonials">
-        <h2 class="text-center"><a href="#about">Business </a></h2>
+        <h2 id="business" class="text-center parallax-window" data-parallax="scroll" >Business</h2>
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                <p class="text-left">クロストゥは古都京都を拠点に美容系ベンチャーのアプリ・サービス開発・運営、ならびにiPhone/Androidアプリ開発、Node.jsやGoogle App Engine/Javaによるバックンド・Webシステム受託開発、AWSの設計・構築コンサルティングをおこなっています。 </p>
+              <p class="text-left">クロストゥは京都・滋賀を拠点に美容系ベンチャーのアプリ・サービス開発・運営、およびそのノウハウを活かしたiPhone/Androidアプリ開発、バックンド・Webシステム受託開発、AWSの設計・構築コンサルティングをおこなっています。 </p>
             </div>
         </div>
         <div>
@@ -59,7 +60,7 @@
                 <div class="col-md-12">
                     <div class="media">
                         <div class="media-left">
-                            <a><img class="media-object" src="https://placehold.jp/80x80.png"></a>
+                            <a><img class="media-object" src="/assets/img/fa-mobile-phone.png"></a>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">iPhone/Androidアプリ開発 </h4>
@@ -70,22 +71,22 @@
                 <div class="col-md-12">
                     <div class="media">
                         <div class="media-left">
-                            <a><img class="media-object" src="https://placehold.jp/80x80.png"></a>
+                            <a><img class="media-object" src="/assets/img/fa-server.png"></a>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">バックエンド開発 </h4>
-                            <p>Node.js (Express / Sails.js) を使ったMobileアプリのバックエンドやWebサービス開発承ります。REST API + RDS (MySQL) + Bootstrapを用いた管理画面という組み合わせが比較的得意です。Google App Engine /Java も実績あります。ご相談ください。 </p>
+                            <p>廉価なクラウド・サーバでも高スループットを実現する Node.js (Express / Sails.js) を使ったMobileアプリのバックエンドやWebサービス開発を承ります。REST API + RDS (MySQL) + Bootstrapを用いた管理画面という組み合わせが比較的得意です。Google App Engine /Java も対応可能です。</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="media">
                         <div class="media-left">
-                            <a><img class="media-object" src="https://placehold.jp/80x80.png"></a>
+                            <a><img class="media-object" src="/assets/img/fa-cloud.png"></a>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">クラウド・サーバ構築 </h4>
-                            <p>クラウド・VPSサービス上に Linuxサーバ (比較的CentOS/Amazon Linux、Ubuntuが得意です)とミドルウェアを構築します。AWSの設計・構築・運用 (VPC、ELB、RDS、Route 53等) もご相談ください。 </p>
+                            <p>クラウド・VPSサービス(AWS、Heroku、OpenShift等)上に Linuxサーバ (CentOS/Amazon Linux、Ubuntu等)とミドルウェアを構築します。クラウド活用で運用管理費を抑制すると共にコストを変動費化する事ができます。AWSの設計・構築・運用 (VPC、ELB、RDS、Route 53等) もご相談ください。 </p>
                         </div>
                     </div>
                 </div>
@@ -97,52 +98,60 @@
             <div class="row"></div>
         </div>
     </section>
-    <section>
-        <div class="row">
+
+    <!--section>
+        <div class="row row_contact">
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                <form class="bootstrap-form-with-validation">
-                    <h2 class="text-center">Contact us</h2>
+                <form class="bootstrap-form-with-validation" action="">
+                    <h2 id="contact" class="text-center">Contact</h2>
                     <div class="form-group">
                         <label class="control-label" for="text-input">Your Name</label>
-                        <input class="form-control" type="text" name="text-input" id="text-input">
+                        <input class="form-control" type="text" name="text-input" id="from_name" value="">
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="email-input">Your Email</label>
-                        <input class="form-control" type="email" name="email-input" id="email-input">
+                        <input class="form-control" type="email" name="email-input" id="from_email" value="">
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="text-input">Subject </label>
-                        <input class="form-control" type="text" name="text-input" id="text-input">
+                        <input class="form-control" type="text" name="text-input" id="subject" value="">
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="textarea-input">Message </label>
-                        <textarea class="form-control" name="textarea-input" id="textarea-input"></textarea>
+                        <textarea class="form-control" name="textarea-input" id="message_body"></textarea>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary" type="submit">Button</button>
+                        <button class="btn btn-primary" type="button" id="send_message">送信する</button>
                     </div>
                 </form>
             </div>
         </div>
-    </section>
+    </section-->
     <section class="features">
-        <h2 class="text-center"><a href="#about">About us </a> </h2>
-        <div class="container">
+        <h2 id="about" class="text-center h2about">About us</h2>
+        <div class="container container_about">
             <div class="row">
-                <div class="col-md-6 footer-about">
-                    <h4>Staff </h4>
-                    <h3>@hntn </h3>
-                    <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+
+                <div class="col-md-offset-0 col-md-6 col-xs-offset-1 col-xs-5 footer-about">
+                    <h4>Staff</h4>
+                    <h3><a href="https://twitter.com/hntn" target="_blank">@hntn</a></h3>
+                    <p>元々はインフラ系とRDBMSを得意としてきましたが、JavaでのSNS開発やサーバサイド開発を経て現在はアプリ開発がメインになっています。ここ数年はJavaScriptをメインにTitanium Mobile や Node.jsをやらせて頂いています。
                     </p>
-                    <div class="social-links social-icons"><a href="http://www.tdtsh.com/blog/" target="_blank"><span class="fa fa-safari"></span></a><a href="https://twitter.com/hntn" target="_blank"><span class="fa fa-twitter"></span></a>
-                        <a href="https://github.com/tdtsh" target="_blank"><span class="fa fa-github"></span></a><a href="http://www.slideshare.net/tdtsh" target="_blank"><span class="fa fa-slideshare"></span></a><a href="https://www.facebook.com/tdtsh" target="_blank"><span class="fa fa-facebook"></span></a>
-                        <a
-                        href="http://jp.linkedin.com/pub/tadatoshi-hanazaki/31/237/b3b/" target="_blank"><span class="fa fa-linkedin"></span></a><a href="http://qiita.com/hntn" target="_blank"><span class="fa fa-question-circle"></span></a></div>
+                    <div class="social-links social-icons">
+                      <a href="http://www.tdtsh.com/blog/" target="_blank"><span class="fa fa-safari"></span></a>
+                      <a href="https://twitter.com/hntn" target="_blank"><span class="fa fa-twitter"></span></a>
+                      <a href="https://github.com/tdtsh" target="_blank"><span class="fa fa-github"></span></a>
+                      <a href="http://www.slideshare.net/tdtsh" target="_blank"><span class="fa fa-slideshare"></span></a>
+                      <a href="https://www.facebook.com/tdtsh" target="_blank"><span class="fa fa-facebook"></span></a>
+                      <a href="http://jp.linkedin.com/pub/tadatoshi-hanazaki/31/237/b3b/" target="_blank"><span class="fa fa-linkedin"></span></a>
+                      <a href="http://qiita.com/hntn" target="_blank"><span class="fa fa-question-circle"></span></a>
+                    </div>
+                    <a href="https://devlink.appcelerator.com/dev/6941595c-e9e1-43ce-8191-b0484eb5354a" target="_blank"><img src="/assets/img/badge-stack-ticert-dev-web.png" width="74" alt="appcelerator" /></a>
                 </div>
-                <div class="col-md-6 footer-about">
-                    <h4>Office </h4>
+                <div class="col-md-6 col-xs-5 footer-about">
+                    <h4>Office</h4>
                     <h3>Close-to </h3>
-                    <p>3F NIPPO-OIKE-BLDG,474 KAMIHONNOJIMAE-CHO,NAKAGYO-KU, KYOTO, 604-0925,JAPAN&nbsp; </p>
+                    <p>Kyoto, Japan</p>
                     <div class="social-links social-icons"></div>
                 </div>
             </div>
@@ -151,6 +160,10 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script>
+      smoothScroll.init() ;
+    </script>
 </body>
 
 </html>
